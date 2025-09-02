@@ -1,0 +1,25 @@
+
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/my-app/next.config.js",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "backend/api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/backend/api/index.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/my-app/$1"
+    }
+  ]
+}
