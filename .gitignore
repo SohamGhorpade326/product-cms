@@ -1,0 +1,41 @@
+# Dependencies and Lockfiles
+/node_modules
+/frontend/my-app/node_modules
+/backend/node_modules
+pnpm-lock.yaml
+
+# Environment Variables - VERY IMPORTANT
+# Contains secret keys for databases, APIs, etc.
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Frontend - Next.js specific
+/frontend/my-app/.next
+/frontend/my-app/out
+/frontend/my-app/build
+
+# Backend - Build output
+/backend/dist
+/backend/build
+
+# Logs
+npm-debug.log*
+yarn-error.log
+yarn-debug.log
+lerna-debug.log
+
+# IDE & Editor specific folders
+.idea
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Operating System specific
+.DS_Store
+Thumbs.db
